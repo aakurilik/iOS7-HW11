@@ -13,6 +13,7 @@
 		D8A0431C28B4032900029D73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A0431A28B4032900029D73 /* Main.storyboard */; };
 		D8A0431E28B4032B00029D73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A0431D28B4032B00029D73 /* Assets.xcassets */; };
 		D8A0432128B4032B00029D73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A0431F28B4032B00029D73 /* LaunchScreen.storyboard */; };
+		D8C5E9EC28B42852007AEF6F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D8C5E9EB28B42852007AEF6F /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8C5E9EC28B42852007AEF6F /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +58,55 @@
 		D8A0431328B4032900029D73 /* iOS7-HW11 */ = {
 			isa = PBXGroup;
 			children = (
+				D8A0432828B4077500029D73 /* Resources */,
+				D8A0432A28B4078C00029D73 /* Sources */,
+			);
+			path = "iOS7-HW11";
+			sourceTree = "<group>";
+		};
+		D8A0432828B4077500029D73 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8A0431D28B4032B00029D73 /* Assets.xcassets */,
+				D8A0432928B4078400029D73 /* Configuration */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D8A0432928B4078400029D73 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				D8A0432228B4032B00029D73 /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		D8A0432A28B4078C00029D73 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D8A0432B28B4079800029D73 /* Storyboards */,
+				D8A0432C28B4079F00029D73 /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D8A0432B28B4079800029D73 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D8A0431F28B4032B00029D73 /* LaunchScreen.storyboard */,
+				D8A0431A28B4032900029D73 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D8A0432C28B4079F00029D73 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				D8A0431428B4032900029D73 /* AppDelegate.swift */,
 				D8A0431628B4032900029D73 /* SceneDelegate.swift */,
 				D8A0431828B4032900029D73 /* ViewController.swift */,
-				D8A0431A28B4032900029D73 /* Main.storyboard */,
-				D8A0431D28B4032B00029D73 /* Assets.xcassets */,
-				D8A0431F28B4032B00029D73 /* LaunchScreen.storyboard */,
-				D8A0432228B4032B00029D73 /* Info.plist */,
 			);
-			path = "iOS7-HW11";
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +125,9 @@
 			dependencies = (
 			);
 			name = "iOS7-HW11";
+			packageProductDependencies = (
+				D8C5E9EB28B42852007AEF6F /* SnapKit */,
+			);
 			productName = "iOS7-HW11";
 			productReference = D8A0431128B4032900029D73 /* iOS7-HW11.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +156,9 @@
 				Base,
 			);
 			mainGroup = D8A0430828B4032900029D73;
+			packageReferences = (
+				D8C5E9EA28B42852007AEF6F /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = D8A0431228B4032900029D73 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -291,10 +339,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS7-HW11/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Sources/Storyboards/LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,10 +368,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS7-HW11/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Sources/Storyboards/LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +408,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8C5E9EA28B42852007AEF6F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8C5E9EB28B42852007AEF6F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8C5E9EA28B42852007AEF6F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D8A0430928B4032900029D73 /* Project object */;
 }

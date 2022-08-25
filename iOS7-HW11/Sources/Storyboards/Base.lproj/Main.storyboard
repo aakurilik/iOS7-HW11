@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS7_HW11" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fonApp" translatesAutoresizingMaskIntoConstraints="NO" id="yU2-o2-ASB">
+                                <rect key="frame" x="-1159" y="-1533" width="2732" height="2048"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMP-pe-gRC">
+                                <rect key="frame" x="152" y="107" width="110.5" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="ojK-EH-jui"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your e-mail" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="joy-zO-ctm">
+                                <rect key="frame" x="137.5" y="223" width="139" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <imageReference key="background" image="lock.fill" catalog="system" symbolScale="small"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mxM-H0-Rj2">
+                                <rect key="frame" x="86" y="280" width="242" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <imageReference key="background" image="lock" catalog="system" symbolScale="small"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot your password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7R-Wi-MxX">
+                                <rect key="frame" x="130" y="451.5" width="154" height="18.5"/>
+                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flk-G7-odb">
+                                <rect key="frame" x="20" y="570" width="189" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8j-pB-h4g">
+                                        <rect key="frame" x="-5" y="32" width="194" height="38"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Facebook" titleAlignment="center">
+                                            <backgroundConfiguration key="background" cornerRadius="15" strokeWidth="0.0" strokeOutset="0.0">
+                                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="15"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoFacebook" translatesAutoresizingMaskIntoConstraints="NO" id="dOr-VL-yW9">
+                                        <rect key="frame" x="8" y="37" width="44" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="JmR-Ok-F7S"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="dOr-VL-yW9" firstAttribute="top" secondItem="flk-G7-odb" secondAttribute="top" constant="37" id="Krq-0K-NoV"/>
+                                    <constraint firstAttribute="trailing" secondItem="m8j-pB-h4g" secondAttribute="trailing" id="NGe-Z1-lNm"/>
+                                    <constraint firstItem="m8j-pB-h4g" firstAttribute="leading" secondItem="flk-G7-odb" secondAttribute="leading" constant="-5" id="TBe-xQ-IVj"/>
+                                    <constraint firstItem="m8j-pB-h4g" firstAttribute="top" secondItem="flk-G7-odb" secondAttribute="top" constant="32" id="oUx-wd-U59"/>
+                                    <constraint firstItem="dOr-VL-yW9" firstAttribute="leading" secondItem="flk-G7-odb" secondAttribute="leadingMargin" id="sVu-TZ-1hD"/>
+                                    <constraint firstAttribute="bottom" secondItem="m8j-pB-h4g" secondAttribute="bottom" constant="30" id="ucY-iU-z4I"/>
+                                    <constraint firstItem="m8j-pB-h4g" firstAttribute="centerY" secondItem="dOr-VL-yW9" secondAttribute="centerY" id="vKp-m6-Ec5"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ifg-67-tni">
+                                <rect key="frame" x="71" y="752" width="200" height="110"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFq-iR-dFY">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="110"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7al-9b-Q5R">
+                                        <rect key="frame" x="100" y="0.0" width="100" height="110"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="flk-G7-odb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="570" id="4kZ-IP-KnQ"/>
+                            <constraint firstItem="F7R-Wi-MxX" firstAttribute="centerX" secondItem="mxM-H0-Rj2" secondAttribute="centerX" id="6Hy-NE-6At"/>
+                            <constraint firstItem="eMP-pe-gRC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6uw-Rv-gk3"/>
+                            <constraint firstItem="mxM-H0-Rj2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="86" id="7Lb-CM-ZNP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="flk-G7-odb" secondAttribute="trailing" constant="205" id="7Xm-1d-iIM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ifg-67-tni" secondAttribute="trailing" constant="143" id="7Yn-W8-KIf"/>
+                            <constraint firstItem="eMP-pe-gRC" firstAttribute="centerX" secondItem="joy-zO-ctm" secondAttribute="centerX" id="Ctv-aN-QkF"/>
+                            <constraint firstItem="Ifg-67-tni" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="D01-OF-fae"/>
+                            <constraint firstItem="Ifg-67-tni" firstAttribute="top" secondItem="flk-G7-odb" secondAttribute="bottom" constant="82" id="Mpj-81-0Gk"/>
+                            <constraint firstItem="eMP-pe-gRC" firstAttribute="centerX" secondItem="yU2-o2-ASB" secondAttribute="centerX" id="S70-G9-bGX"/>
+                            <constraint firstItem="eMP-pe-gRC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="Wpb-bE-NF1"/>
+                            <constraint firstItem="flk-G7-odb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Yzj-AL-SqI"/>
+                            <constraint firstItem="flk-G7-odb" firstAttribute="top" secondItem="yU2-o2-ASB" secondAttribute="bottom" constant="55" id="aSo-wl-gbu"/>
+                            <constraint firstAttribute="bottom" secondItem="F7R-Wi-MxX" secondAttribute="bottom" constant="426" id="fgM-Pl-73f"/>
+                            <constraint firstItem="Ifg-67-tni" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gfE-NB-N9E"/>
+                            <constraint firstItem="mxM-H0-Rj2" firstAttribute="top" secondItem="joy-zO-ctm" secondAttribute="bottom" constant="23" id="ggz-jU-2hK"/>
+                            <constraint firstItem="eMP-pe-gRC" firstAttribute="centerX" secondItem="mxM-H0-Rj2" secondAttribute="centerX" id="jGp-PK-Cjz"/>
+                            <constraint firstAttribute="bottom" secondItem="flk-G7-odb" secondAttribute="bottom" constant="226" id="o26-v8-q0q"/>
+                            <constraint firstItem="joy-zO-ctm" firstAttribute="top" secondItem="eMP-pe-gRC" secondAttribute="bottom" constant="50" id="vnf-DJ-PVb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LogoFacebook" width="480" height="480"/>
+        <image name="fonApp" width="2732" height="2048"/>
+        <image name="lock" catalog="system" width="128" height="128"/>
+        <image name="lock.fill" catalog="system" width="128" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
